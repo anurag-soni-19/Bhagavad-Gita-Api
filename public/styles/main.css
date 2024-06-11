@@ -9,11 +9,11 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  /* padding-top: 2rem;
+  padding-bottom: 2rem; */
   box-sizing: border-box;
 }
-h1, label{
+h1{
   color: white;
   font-family: "Titan One", cursive;
   margin-bottom: 20px;
@@ -120,8 +120,9 @@ a {
 }
 
 label {
+  color: white;
+  font-family: "Titan One", cursive;
   font-size: 2rem;
-  color: black;
 }
 
 .verse-form {
@@ -129,5 +130,17 @@ label {
   width: 60%;
   background-color: white;
   border-radius: 15px;
+  text-align: center;
+  padding: 1rem;
+}
+
+input{
+  border-radius: 4px;
+  height: 30px;
+}
+
+.title{
+  color: white;
+  font-size: 1.8rem;
   text-align: center;
 }

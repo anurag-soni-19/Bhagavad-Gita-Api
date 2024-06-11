@@ -16,9 +16,14 @@ app.use(express.static("public"));
 app.get("/", (req, res) => {
     res.render("chap-verse.ejs");
 });
-app.get("/your-verse", async (req, res) =>{
-    var chapter = Math.floor(Math.random() * 18) + 1;
-    var verse = Math.floor(Math.random() * 20) + 1;
+
+const totalChapters = 18;
+const totalVerses = [0, 47, 72, 43, 42, 29, 47, 30, 28, 34, 42, 55, 20, 35, 27, 20, 24, 28, 78];
+
+app.post("/your-verse", async (req, res) =>{
+    
+    var chapter = req.body.chapter;
+    var verse = req.body.verse % totalVerses[chapter];
     const options = {
         method: 'GET',
         url: `https://bhagavad-gita3.p.rapidapi.com/v2/chapters/${chapter}/verses/${verse}/`,
