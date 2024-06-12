@@ -1,17 +1,19 @@
 <%- include("partials/header.ejs") %>
 
 
-<h1 class="title">Enter the chapter and the verse from Bhagwat-gita <br>
+<h1 class="title">Enter the chapter and the verse from Bhagwat-gita <br><hr>
     you want to get!</h1>
 <div class="verse-form card">
     <form id="form" action="/your-verse" method="post">
-        <label for="chapterInput">Chapter : </label><br>
-        <input type="number"  id="chapterInput" name="chapter" min="1" max="18" required>
-        <br>
-        <label for="verseInput">Verse :</label><br>
-        <input type="number" id="verseInput" name="verse" min="1" required>
-        <br>
-        <input type="submit" value="Get verse!">
+        <div class="blocks">
+            <label for="chapterInput">Chapter : </label>
+            <input class="InputField" type="number"  id="chapterInput" name="chapter" min="1" max="18" required>
+            <br>
+            <label for="verseInput">Verse :</label>
+            <input class="InputField" type="number" id="verseInput" name="verse" min="1" required>
+            <br>
+        </div>
+        <input class="button" type="submit" value="Get verse!">
     </form>
 </div>
 

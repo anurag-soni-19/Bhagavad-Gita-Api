@@ -21,7 +21,6 @@ const totalChapters = 18;
 const totalVerses = [0, 47, 72, 43, 42, 29, 47, 30, 28, 34, 42, 55, 20, 35, 27, 20, 24, 28, 78];
 
 app.post("/your-verse", async (req, res) =>{
-    
     var chapter = req.body.chapter;
     var verse = req.body.verse % totalVerses[chapter];
     const options = {

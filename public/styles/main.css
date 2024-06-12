@@ -126,21 +126,50 @@ label {
 }
 
 .verse-form {
-  height: 50vh;
-  width: 60%;
   background-color: white;
   border-radius: 15px;
   text-align: center;
   padding: 1rem;
 }
-
+.blocks{
+  text-align: left;
+}
 input{
-  border-radius: 4px;
+  border-radius: 15px;
   height: 30px;
+  text-align: center;
 }
 
 .title{
   color: white;
   font-size: 1.8rem;
   text-align: center;
+}
+
+.InputField{
+  width: 100%;
+}
+
+.button {
+  height: 8vh;
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: goldenrod;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px white;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
